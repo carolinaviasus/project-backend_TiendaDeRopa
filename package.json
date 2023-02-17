@@ -1,11 +1,14 @@
 {
   "name": "project-backend",
+  "homepage": "https://carolinaviasus.github.io/project-backend_TiendaDeRopa",
   "version": "1.0.0",
   "description": "Proyecto MisiontIC",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Carolina Viasus",
   "license": "ISC",
@@ -15,6 +18,7 @@
     "mongoose": "^6.7.2"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.20"
   }
 }
